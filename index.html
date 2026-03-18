@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="title" content="Immerion Casino – Virallinen sivusto | Bonus & ilmaiskierrokset" />
+  <meta name="description" content="Immerion Casino virallinen sivusto. Me tarjoamme huippubonuspaketin, ilmaiskierroksia, nopeat maksut ja laajan pelivalikoiman. Pelaa turvallisesti ja nauti modernista kasinokokemuksesta missä tahansa." />
+  <title>Immerion Casino – Virallinen sivusto | Bonus & ilmaiskierrokset</title>
+  <link rel="icon" type="image/x-icon" href="favicon%20(2).ico" />
+  <link rel="canonical" href="index.html" />
+  <style>
+    :root {
+      --bg-main: #110229;
+      --bg-dark: #050311;
+      --accent: #baf94d;
+      --text: #f2efff;
+      --muted: #c7bddf;
+      --card: #1a0838;
+      --line: #32205c;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      background: var(--bg-main);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1200px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--bg-dark);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid #1f1338;
+    }
+
+    .header-inner {
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 12px 0;
+    }
+
+    .logo {
+      width: 180px;
+      height: auto;
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .header-btn {
+      background: var(--accent);
+      color: var(--bg-dark);
+      border: 0;
+      font-weight: 700;
+      padding: 11px 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform .2s ease, opacity .2s ease;
+    }
+
+    .header-btn:hover {
+      transform: translateY(-2px);
+      opacity: .92;
+    }
+
+    .hero {
+      padding: 24px 0 18px;
+      text-align: center;
+    }
+
+    .hero-title {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      line-height: 1.15;
+      margin-bottom: 14px;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .hero-banner {
+      border-radius: 18px;
+      border: 1px solid #2b1852;
+      box-shadow: 0 14px 34px rgba(0, 0, 0, .35);
+      overflow: hidden;
+    }
+
+    .cta-wrap {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .cta-btn {
+      background: var(--bg-dark);
+      color: var(--accent);
+      border: 2px solid var(--accent);
+      font-size: 1.15rem;
+      font-weight: 800;
+      padding: 14px 34px;
+      border-radius: 999px;
+      cursor: pointer;
+      animation: pulse 1.6s infinite;
+      box-shadow: 0 0 0 0 rgba(186, 249, 77, .65);
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(186, 249, 77, .65);
+      }
+      70% {
+        transform: scale(1.03);
+        box-shadow: 0 0 0 18px rgba(186, 249, 77, 0);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(186, 249, 77, 0);
+      }
+    }
+
+    main {
+      padding-bottom: 10px;
+    }
+
+    .content-section {
+      padding: 18px 0;
+    }
+
+    .text-card {
+      background: #170633;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 2.8vw, 2rem);
+      margin-bottom: 16px;
+    }
+
+    h3 {
+      margin: 20px 0 10px;
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+
+    p {
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    ul,
+    ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+      color: var(--muted);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: .95rem;
+      overflow-x: auto;
+      display: block;
+    }
+
+    th,
+    td {
+      border: 1px solid var(--line);
+      padding: 10px;
+      text-align: left;
+      min-width: 140px;
+    }
+
+    th {
+      background: #230c46;
+      color: var(--accent);
+    }
+
+    .section-image {
+      width: 100%;
+      border-radius: 14px;
+      border: 1px solid #3b275f;
+      margin: 10px 0 16px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, .3);
+    }
+
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+
+    .game-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
+      transition: transform .2s ease, border-color .2s ease;
+    }
+
+    .game-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+
+    .game-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .payments-grid {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(90px, 1fr));
+      gap: 10px;
+      align-items: center;
+    }
+
+    .pay-item {
+      background: #16052f;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 72px;
+    }
+
+    .pay-item img {
+      max-height: 40px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .reviews {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .review {
+      background: #170633;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+    }
+
+    .review h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .faq details {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #15052d;
+      margin-bottom: 10px;
+      padding: 14px 16px;
+    }
+
+    .faq summary {
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .faq p {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    .updated {
+      background: #1a0838;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: 14px 0;
+      margin-top: 16px;
+    }
+
+    .updated p {
+      margin: 0;
+      color: var(--accent);
+      font-weight: 700;
+      text-align: center;
+    }
+
+    footer {
+      background: var(--bg-dark);
+      padding: 26px 0;
+      border-top: 1px solid #1f1338;
+    }
+
+    .trust-row {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .trust-row img {
+      height: 42px;
+      width: auto;
+      object-fit: contain;
+      background: #0e071f;
+      border: 1px solid #2f2150;
+      padding: 5px 10px;
+      border-radius: 8px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin-bottom: 12px;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .copyright {
+      text-align: center;
+      font-size: .92rem;
+      color: #a798cb;
+    }
+
+    @media (max-width: 1020px) {
+      .games-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .payments-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .reviews {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header-actions {
+        width: 100%;
+      }
+
+      .cta-btn {
+        width: 100%;
+      }
+
+      .games-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .payments-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .text-card {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="#" aria-label="Immerion Casino etusivu">
+        <img class="logo" src="immerion%20casino%20images/casino%20immerion.svg" alt="Immerion Casino logo" />
+      </a>
+      <div class="header-actions">
+        <button class="header-btn" type="button">Kirjaudu sisään</button>
+        <button class="header-btn" type="button">Rekisteröidy</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1 class="hero-title">Immerion Casino</h1>
+      <div class="hero-banner">
+        <img src="immerion%20casino%20images/immerion%20casino.webp" alt="Immerion Casino banner" />
+      </div>
+      <div class="cta-wrap">
+        <button class="cta-btn" type="button">Pelaa nyt!</button>
+      </div>
+    </section>
+
+    <section class="content-section container">
+      <div class="text-card">
+        <p>Me tarjoamme ainutlaatuisen pelikokemuksen kaikille viihteen ystäville. Immerion Casino yhdistää modernin teknologian, laadukkaat pelit ja turvallisen ympäristön. Meidän tavoitteenamme on tarjota sujuva ja nautinnollinen kokonaisuus, jossa jokainen voi löytää suosikkipelinsä. Casino Immerion tuo yhteen jännityksen ja luotettavuuden yhdessä paikassa.</p>
+      </div>
+    </section>
+
+    <section class="content-section container" aria-labelledby="games-title">
+      <div class="text-card">
+        <h2 id="games-title">Suositut pelit</h2>
+        <div class="games-grid">
+          <article class="game-card"><img src="game%20images/aviatorlogo.png" alt="Aviator" /></article>
+          <article class="game-card"><img src="game%20images/baccaratvip.jpg" alt="Baccarat VIP" /></article>
+          <article class="game-card"><img src="game%20images/blackjackpro.png" alt="Blackjack Pro" /></article>
+          <article class="game-card"><img src="game%20images/bookofgold.png" alt="Book of Gold" /></article>
+          <article class="game-card"><img src="game%20images/crazytime.webp" alt="Crazy Time" /></article>
+          <article class="game-card"><img src="game%20images/jackpotcity.webp" alt="Jackpot City" /></article>
+          <article class="game-card"><img src="game%20images/lightning%20dice.jpg" alt="Lightning Dice" /></article>
+          <article class="game-card"><img src="game%20images/megaslots.jpeg" alt="Mega Slots" /></article>
+          <article class="game-card"><img src="game%20images/poker%20arena.jpeg" alt="Poker Arena" /></article>
+          <article class="game-card"><img src="game%20images/roulette%20live.avif" alt="Roulette Live" /></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section container">
+      <div class="text-card">
+        <h2>Tietoa Immerion Casinosta</h2>
+        <img class="section-image" src="immerion%20casino%20images/welcome%20to%20immerion.webp" alt="Welcome to Immerion" />
+        <p>Me olemme luoneet Immerion Casino -alustan tarjoamaan turvallisen ja viihdyttävän pelikokemuksen. Me yhdistämme laadukkaat pelit, nopeat maksut ja käyttäjäystävällisen ympäristön. Casino Immerion keskittyy luotettavuuteen, innovaatioon ja asiakastyytyväisyyteen jokaisessa yksityiskohdassa.</p>
+        <table>
+          <tr>
+            <th>Ominaisuus</th>
+            <th>Tiedot</th>
+          </tr>
+          <tr>
+            <td>Nimi</td>
+            <td>Immerion Casino</td>
+          </tr>
+          <tr>
+            <td>Pelivalikoima</td>
+            <td>Kolikkopelit, live-kasino, pöytäpelit</td>
+          </tr>
+          <tr>
+            <td>Maksutavat</td>
+            <td>Luottokortit, e-lompakot, kryptot</td>
+          </tr>
+          <tr>
+            <td>Asiakastuki</td>
+            <td>24/7 live chat ja sähköposti</td>
+          </tr>
+          <tr>
+            <td>Turvallisuus</td>
+            <td>SSL-salaus ja lisensointi</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="content-section container">
+      <div class="text-card">
+        <h2>Kuinka rekisteröityä Immerion Casinoon</h2>
+        <img class="section-image" src="immerion%20casino%20images/immerion%20casino%20registration.webp" alt="Immerion Casino registration" />
+        <p>Me olemme tehneet rekisteröitymisestä nopeaa ja vaivatonta Immerion Casino -alustalla. Me varmistamme turvallisen prosessin, jotta pelaaminen voi alkaa ilman viivettä. Casino Immerion tarjoaa selkeän käyttöliittymän, jonka avulla tilin luominen onnistuu muutamassa minuutissa.</p>
+        <ol>
+          <li>Siirry rekisteröitymissivulle</li>
+          <li>Täytä henkilökohtaiset tiedot</li>
+          <li>Luo käyttäjätunnus ja salasana</li>
+          <li>Vahvista sähköpostiosoite</li>
+          <li>Kirjaudu sisään ja aloita pelaaminen</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="content-section container">
+      <div class="text-card">
+        <h2>Bonukset Immerion Casinolla</h2>
+        <p>Me tarjoamme monipuolisia etuja kaikille pelaajille Immerion Casino -alustalla. Meidän bonukset on suunniteltu lisäämään voittomahdollisuuksia ja tekemään pelaamisesta entistä jännittävämpää. Casino Immerion palkitsee sekä uudet että uskolliset käyttäjät houkuttelevilla kampanjoilla.</p>
+        <ul>
+          <li>Tervetulopaketti</li>
+          <li>Ilmaiskierrokset ja tehtäväkampanjat</li>
+          <li>Käteispalautus</li>
+          <li>VIP-bonukset</li>
+          <li>Ystäväohjelma</li>
+        </ul>
+
+        <h3>7 Days of Luck</h3>
+        <img class="section-image" src="immerion%20casino%20images/immerion%20casino%207%20days%20of%20luck%20bonus.webp" alt="7 Days of Luck bonus" />
+        <p>Me tarjoamme päivittäisiä tehtäviä, joiden avulla voi ansaita ilmaiskierroksia, bonuksia ja cashback-etuja viikon ajan.</p>
+
+        <h3>Tervetulopaketti</h3>
+        <img class="section-image" src="immerion%20casino%20images/immerion%20casino%20welcome%20bonus.webp" alt="Tervetulobonus" />
+        <p>Meidän eksklusiivinen paketti sisältää useita talletusbonuksia:<br />
+        1. talletus: 100% + 100 ilmaiskierrosta<br />
+        2. talletus: 30% + 50 ilmaiskierrosta<br />
+        3. talletus: 50% + 50 ilmaiskierrosta<br />
+        4. talletus: 70% + 50 ilmaiskierrosta</p>
+
+        <h3>Käteispalautus</h3>
+        <img class="section-image" src="immerion%20casino%20images/immerion%20casino%20cashback.webp" alt="Cashback bonus" />
+        <p>Me tarjoamme 10% päivittäisen ja 10% viikoittaisen cashbackin, joka antaa lisää mahdollisuuksia voittaa takaisin häviöitä.</p>
+
+        <h3>VIP-bonus</h3>
+        <img class="section-image" src="immerion%20casino%20images/immerion%20casino%20vip%20bonus.webp" alt="VIP bonus" />
+        <p>Me palkitsemme aktiivisia pelaajia jopa 60 000$ highroller-bonuksella, joka on suunnattu suurten panosten ystäville.</p>
+
+        <h3>Ystäväohjelma</h3>
+        <p>Me maksamme palkkioita jokaisesta ystävän tekemästä panoksesta, tarjoten jatkuvaa ansaintamahdollisuutta.</p>
+      </div>
+    </section>
+
+    <section class="content-section container">
+      <div class="text-card">
+        <h2>Pelivalikoima Immerion Casino</h2>
+        <img class="section-image" src="immerion%20casino%20images/immerion%20game%20selection.webp" alt="Immerion game selection" />
+        <p>Me tarjoamme laajan ja monipuolisen pelivalikoiman Immerion Casino -alustalla, joka sopii kaiken tasoisille pelaajille. Meidän kokoelmamme sisältää moderneja kolikkopelejä, klassisia pöytäpelejä sekä realistisia live-kasinoelämyksiä. Casino Immerion tekee yhteistyötä tunnettujen pelivalmistajien kanssa varmistaakseen korkean laadun ja sujuvan pelikokemuksen. Me päivitämme pelikirjastoa säännöllisesti, jotta pelaajilla on aina pääsy uusimpiin ja suosituimpiin peleihin.</p>
+        <table>
+          <tr>
+            <th>Pelikategoria</th>
+            <th>Kuvaus</th>
+          </tr>
+          <tr>
+            <td>Kolikkopelit</td>
+            <td>Laaja valikoima video- ja jackpot-pelejä eri teemoilla</td>
+          </tr>
+          <tr>
+            <td>Pöytäpelit</td>
+            <td>Blackjack, ruletti, baccarat ja muut klassikot</td>
+          </tr>
+          <tr>
+            <td>Live-kasino</td>
+            <td>Oikeat jakajat ja reaaliaikainen pelikokemus</td>
+          </tr>
+          <tr>
+            <td>Jackpot-pelit</td>
+            <td>Progressiiviset jackpotit suurilla voittomahdollisuuksilla</td>
+          </tr>
+          <tr>
+            <td>Pikapelit</td>
+            <td>Nopeatempoiset pelit välittömiin tuloksiin</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="content-section container">
+      <div class="text-card">
+        <h2>Pelivalmistajat Immerion Casino</h2>
+        <img class="section-image" src="immerion%20casino%20images/immerion%20casino%20game%20providers.webp" alt="Immerion Casino game providers" />
+        <p>Me teemme yhteistyötä alan johtavien pelivalmistajien kanssa tarjotaksemme korkealaatuisen kokemuksen Immerion Casino -alustalla. Me varmistamme monipuolisuuden, luotettavuuden ja innovatiiviset ratkaisut. Casino Immerion tuo yhteen tunnetut nimet ja uusimmat peliteknologiat.</p>
+        <ul>
+          <li>NetEnt</li>
+          <li>Microgaming</li>
+          <li>Play'n GO</li>
+          <li>Pragmatic Play</li>
+          <li>Evolution Gaming</li>
+          <li>Yggdrasil</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section container">
+      <div class="text-card">
+        <h2>Immerion Casino mobiilipelaaminen</h2>
+        <p>Me tarjoamme saumattoman mobiilipelikokemuksen Immerion Casino -alustalla, joka toimii erinomaisesti sekä älypuhelimilla että tableteilla. Meidän sivustomme on täysin optimoitu mobiilikäyttöön, joten pelaajat voivat nauttia suosikkipeleistään missä ja milloin tahansa ilman erillisiä latauksia. Casino Immerion hyödyntää modernia teknologiaa varmistaakseen nopeat latausajat, selkeän navigoinnin ja sujuvan pelattavuuden kaikilla laitteilla.</p>
+        <p>Me varmistamme, että kaikki pelit toimivat moitteettomasti mobiilissa, mukaan lukien kolikkopelit, live-kasino ja pöytäpelit. Lisäksi maksut ja tilinhallinta ovat helposti käytettävissä myös mobiililaitteilla, mikä tekee koko pelikokemuksesta vaivattoman ja turvallisen liikkeellä ollessa.</p>
+      </div>
+    </section>
+
+    <section class="content-section container">
+      <div class="text-card">
+        <h2>Immerion Casino turvallisuus ja reilu peli</h2>
+        <p>Me asetamme turvallisuuden etusijalle Immerion Casino -alustalla varmistaaksemme luotettavan pelikokemuksen kaikille käyttäjille. Me käytämme edistynyttä SSL-salausta suojataksemme henkilökohtaiset ja taloudelliset tiedot. Casino Immerion toimii lisensoitujen sääntelyviranomaisten alaisuudessa, mikä takaa läpinäkyvän ja reilun toiminnan.</p>
+        <p>Me teemme yhteistyötä riippumattomien testausorganisaatioiden kanssa varmistaaksemme pelien satunnaisuuden ja oikeudenmukaisuuden. Lisäksi tarjoamme vastuullisen pelaamisen työkaluja, joiden avulla pelaajat voivat hallita omaa pelikokemustaan turvallisesti.</p>
+      </div>
+    </section>
+
+    <section class="content-section container">
+      <div class="text-card">
+        <h2>Immerion Casino asiakastuki</h2>
+        <p>Me tarjoamme ammattitaitoista ja nopeaa asiakastukea Immerion Casino -alustalla varmistaaksemme sujuvan pelikokemuksen. Meidän tukitiimimme on valmiina auttamaan kaikissa kysymyksissä, olipa kyse rekisteröitymisestä, maksutavoista tai teknisistä ongelmista. Casino Immerion panostaa käyttäjäystävälliseen palveluun, jotta jokainen pelaaja saa tarvitsemansa avun nopeasti ja helposti.</p>
+        <p>Me vastaamme kyselyihin nopeasti ja tarjoamme useita yhteydenottokanavia, mukaan lukien sähköposti support@immerion.fi, jotta apu on aina lähellä.</p>
+        <ul>
+          <li>24/7 live chat</li>
+          <li>Sähköposti: support@immerion.fi</li>
+          <li>Nopea vastausaika</li>
+          <li>Monikielinen tuki</li>
+          <li>Apua teknisissä ja maksuihin liittyvissä kysymyksissä</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section container">
+      <div class="text-card">
+        <h2>Maksu- ja kotiutusmenetelmät Casino Immerion</h2>
+        <p>Me tarjoamme monipuoliset ja turvalliset maksutavat Casino Immerion -alustalla, jotta talletukset ja kotiutukset sujuvat nopeasti ja vaivattomasti. Meidän järjestelmämme tukee useita maksupalveluja, varmistaen joustavuuden kaikille pelaajille. Immerion Casino käsittelee maksut tehokkaasti ja käyttää suojattuja yhteyksiä, jotta rahansiirrot ovat aina turvallisia. Me pyrimme tarjoamaan nopeita kotiutuksia sekä selkeän ja läpinäkyvän maksuprosessin jokaiselle käyttäjälle.</p>
+        <table>
+          <tr>
+            <th>Maksutapa</th>
+            <th>Talletus</th>
+            <th>Kotiutus</th>
+            <th>Käsittelyaika</th>
+          </tr>
+          <tr>
+            <td>Visa / MasterCard</td>
+            <td>Kyllä</td>
+            <td>Kyllä</td>
+            <td>1-3 päivää</td>
+          </tr>
+          <tr>
+            <td>Skrill</td>
+            <td>Kyllä</td>
+            <td>Kyllä</td>
+            <td>24 tuntia</td>
+          </tr>
+          <tr>
+            <td>Neteller</td>
+            <td>Kyllä</td>
+            <td>Kyllä</td>
+            <td>24 tuntia</td>
+          </tr>
+          <tr>
+            <td>Pankkisiirto</td>
+            <td>Kyllä</td>
+            <td>Kyllä</td>
+            <td>2-5 päivää</td>
+          </tr>
+          <tr>
+            <td>Kryptovaluutat</td>
+            <td>Kyllä</td>
+            <td>Kyllä</td>
+            <td>Välitön – 1 tunti</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="content-section container" aria-labelledby="payment-logos-title">
+      <div class="text-card">
+        <h2 id="payment-logos-title">Maksutavat</h2>
+        <div class="payments-grid">
+          <div class="pay-item"><img src="casino%20payment%20methods/visa.png" alt="Visa" /></div>
+          <div class="pay-item"><img src="casino%20payment%20methods/Mastercard_logo.webp" alt="Mastercard" /></div>
+          <div class="pay-item"><img src="casino%20payment%20methods/neteller%20logo.png" alt="Neteller" /></div>
+          <div class="pay-item"><img src="casino%20payment%20methods/Paysafecard_logo.png" alt="Paysafecard" /></div>
+          <div class="pay-item"><img src="casino%20payment%20methods/Payoneer_new_logo.png" alt="Payoneer" /></div>
+          <div class="pay-item"><img src="casino%20payment%20methods/bitcoin-btc-logo.png" alt="Bitcoin" /></div>
+          <div class="pay-item"><img src="casino%20payment%20methods/crypto%20logo.png" alt="Crypto" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section container">
+      <h2>Arvostelut Immerion Casinosta</h2>
+      <div class="reviews">
+        <div class="review">
+          <h3>Mikko Laine ★★★★★</h3>
+          <p>Me olemme todella vaikuttuneita Immerion Casino -alustasta. Pelaaminen on sujuvaa, kotiutukset toimivat nopeasti ja pelivalikoima on erinomainen. Meidän kokemuksemme on ollut erittäin positiivinen alusta alkaen.</p>
+        </div>
+        <div class="review">
+          <h3>Laura Nieminen ★★★★★</h3>
+          <p>Me arvostamme erityisesti Casino Immerion selkeää käyttöliittymää ja laadukkaita bonuksia. Asiakastuki vastasi nopeasti ja auttoi tehokkaasti. Meidän mielestä tämä on yksi parhaista kasinoista tällä hetkellä.</p>
+        </div>
+        <div class="review">
+          <h3>Janne Virtanen ★★★★★</h3>
+          <p>Me olemme testanneet useita kasinoita, mutta Immerion Casino erottuu edukseen. Nopeat maksut, hyvät kampanjat ja toimiva mobiiliversio tekevät pelikokemuksesta erinomaisen. Me suosittelemme tätä lämpimästi.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section container faq">
+      <div class="text-card">
+        <h2>Usein kysytyt kysymykset</h2>
+        <details>
+          <summary>Onko Immerion Casino turvallinen?</summary>
+          <p>Me käytämme edistynyttä salausta ja lisensoituja järjestelmiä varmistaaksemme turvallisen pelikokemuksen kaikille käyttäjille.</p>
+        </details>
+        <details>
+          <summary>Kuinka nopeasti kotiutukset käsitellään?</summary>
+          <p>Me käsittelemme kotiutukset nopeasti, yleensä 24 tunnin kuluessa maksutavasta riippuen.</p>
+        </details>
+        <details>
+          <summary>Tarjoaako Casino Immerion bonuksia?</summary>
+          <p>Me tarjoamme erilaisia bonuksia, kuten tervetuliaisbonuksia, ilmaiskierroksia ja cashback-etuita.</p>
+        </details>
+        <details>
+          <summary>Voiko pelata mobiililaitteella?</summary>
+          <p>Meidän alustamme toimii täysin mobiilissa, joten pelaaminen onnistuu helposti missä tahansa.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <section class="updated" aria-label="Viimeisin päivitys">
+    <div class="container">
+      <p><span>Päivitetty:</span> <span id="updated-date"></span></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="trust-row" aria-label="Luottamusmerkit">
+        <img src="trust%20bages/cga.jpeg" alt="CGA badge" />
+        <img src="trust%20bages/dmca.png" alt="DMCA badge" />
+        <img src="trust%20bages/gambleaware.png" alt="GambleAware badge" />
+      </div>
+      <nav class="footer-links" aria-label="Alatunnisteen linkit">
+        <a href="about-us/">Tietoa meistä</a>
+        <a href="contact-us/">Ota yhteyttä</a>
+        <a href="bonus-policy/">Bonuskäytäntö</a>
+        <a href="privacy-policy/">Tietosuojakäytäntö</a>
+        <a href="terms-and-conditions/">Ehdot ja säännöt</a>
+        <a href="responsible-gambling/">Vastuullinen pelaaminen</a>
+      </nav>
+      <p class="copyright">2026 Copyright Immerion Casino. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const updatedDate = document.getElementById('updated-date');
+    const now = new Date();
+    updatedDate.textContent = now.toLocaleDateString('fi-FI', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric'
+    });
+  </script>
+</body>
+</html>
